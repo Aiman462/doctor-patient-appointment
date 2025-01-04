@@ -3,6 +3,7 @@ import Appointmentcon from "../controllers/appointmentcontroller.js";
 
 const appointment=express.Router();
 
+// appointment.post("/:id/create",Appointmentcon.create );
 appointment.post("/:id/create",Appointmentcon.create );
 appointment.get("/:id/getAll" , Appointmentcon.getAll);
 appointment.get("/:id/getAccepted" , Appointmentcon.getAccepted);

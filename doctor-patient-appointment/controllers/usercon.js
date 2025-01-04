@@ -7,6 +7,9 @@ let Usercontroller={
             await user.save();
             res.status(201).send({ message:"User created", user});
         }catch(error){
+
+
+            
             res.status(400).send({ message:"Error creating user", error});
         }
     }
